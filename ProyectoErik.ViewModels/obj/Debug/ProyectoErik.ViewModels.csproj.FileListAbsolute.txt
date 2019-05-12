@@ -1,0 +1,5 @@
+C:\Users\moise\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoErik\ProyectoErik.ViewModels\bin\Debug\ProyectoErik.ViewModels.dll
+C:\Users\moise\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoErik\ProyectoErik.ViewModels\bin\Debug\ProyectoErik.ViewModels.pdb
+C:\Users\moise\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoErik\ProyectoErik.ViewModels\obj\Debug\ProyectoErik.ViewModels.csprojResolveAssemblyReference.cache
+C:\Users\moise\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoErik\ProyectoErik.ViewModels\obj\Debug\ProyectoErik.ViewModels.dll
+C:\Users\moise\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoErik\ProyectoErik.ViewModels\obj\Debug\ProyectoErik.ViewModels.pdb

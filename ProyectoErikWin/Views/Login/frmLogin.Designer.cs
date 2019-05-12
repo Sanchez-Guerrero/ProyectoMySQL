@@ -43,6 +43,9 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(192, 22);
             this.txtEmail.TabIndex = 0;
+            this.txtEmail.Text = "Email";
+            this.txtEmail.Enter += new System.EventHandler(this.txtEmail_Enter);
+            this.txtEmail.Leave += new System.EventHandler(this.txtEmail_Leave);
             // 
             // btnIniciarSesion
             // 
@@ -67,7 +70,9 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(192, 22);
             this.txtPassword.TabIndex = 1;
-            this.txtPassword.UseSystemPasswordChar = true;
+            this.txtPassword.Text = "Password";
+            this.txtPassword.Enter += new System.EventHandler(this.txtPassword_Enter);
+            this.txtPassword.Leave += new System.EventHandler(this.txtPassword_Leave);
             // 
             // lblCerrar
             // 
@@ -104,9 +109,9 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button btnIniciarSesion;
-        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label lblCerrar;
         public System.Windows.Forms.TextBox txtEmail;
+        public System.Windows.Forms.Button btnIniciarSesion;
+        public System.Windows.Forms.TextBox txtPassword;
     }
 }

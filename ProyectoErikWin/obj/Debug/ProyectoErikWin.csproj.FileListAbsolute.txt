@@ -14,8 +14,8 @@ C:\Users\moise\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoErik\Proy
 C:\Users\moise\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoErik\ProyectoErikWin\bin\Debug\MySql.Data.xml
 C:\Users\moise\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoErik\ProyectoErikWin\obj\Debug\ProyectoErikWin.csprojResolveAssemblyReference.cache
 C:\Users\moise\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoErik\ProyectoErikWin\obj\Debug\ProyectoErikWin.Properties.Resources.resources
+C:\Users\moise\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoErik\ProyectoErikWin\obj\Debug\ProyectoErikWin.Views.Login.frmLogin.resources
 C:\Users\moise\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoErik\ProyectoErikWin\obj\Debug\ProyectoErikWin.Views.frmRegistroGeneral.resources
 C:\Users\moise\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoErik\ProyectoErikWin\obj\Debug\ProyectoErikWin.csproj.GenerateResource.Cache
 C:\Users\moise\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoErik\ProyectoErikWin\obj\Debug\ProyectoErikWin.exe
 C:\Users\moise\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoErik\ProyectoErikWin\obj\Debug\ProyectoErikWin.pdb
-C:\Users\moise\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoErik\ProyectoErikWin\obj\Debug\ProyectoErikWin.Views.Login.frmLogin.resources

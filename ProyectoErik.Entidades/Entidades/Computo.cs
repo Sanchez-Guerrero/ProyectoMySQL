@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace ProyectoErik.Entidades.Entidades
 {
+    /*Se crea la tabla y los atributos, tambien obtenemos los atributos 
+    de la tabla marca; ya que estas tablas se encuentran relacionadas.*/
     public class Computo
     {
         public int id { get; set; }

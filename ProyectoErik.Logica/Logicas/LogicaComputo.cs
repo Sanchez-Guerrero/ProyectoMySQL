@@ -10,14 +10,14 @@ namespace ProyectoErik.Logica.Logicas
 {
     public class LogicaComputo
     {
-        private RepositorioComputo _repositorioComputo;
+        private RepositorioComputo _repositorioComputo;//Creamos un objeto de tipo RepositorioComputo.
 
-        public LogicaComputo()
+        public LogicaComputo()//Se inicializa un constructor.
         {
-            _repositorioComputo = new RepositorioComputo();
+            _repositorioComputo = new RepositorioComputo();//Se crea una inyeccion de dependencias.
         }
 
-        public void InsertarComputoyMarca(Computo computo)
+        public void InsertarComputoyMarca(Computo computo)//Aquí se realiza la logica para poder insertar.
         {
             _repositorioComputo.InsertarComputoyMarca(computo);
         }

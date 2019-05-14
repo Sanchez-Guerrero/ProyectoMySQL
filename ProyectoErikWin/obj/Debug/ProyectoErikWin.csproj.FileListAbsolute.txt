@@ -19,3 +19,6 @@ C:\Users\moise\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoErik\Proy
 C:\Users\moise\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoErik\ProyectoErikWin\obj\Debug\ProyectoErikWin.csproj.GenerateResource.Cache
 C:\Users\moise\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoErik\ProyectoErikWin\obj\Debug\ProyectoErikWin.exe
 C:\Users\moise\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoErik\ProyectoErikWin\obj\Debug\ProyectoErikWin.pdb
+C:\Respaldo\UTTT\Repositorios\ProyectoErik\ProyectoErikWin\bin\Debug\ProyectoErikWin.exe.config
+C:\Respaldo\UTTT\Repositorios\ProyectoErik\ProyectoErikWin\obj\Debug\ProyectoErikWin.exe
+C:\Respaldo\UTTT\Repositorios\ProyectoErik\ProyectoErikWin\obj\Debug\ProyectoErikWin.pdb

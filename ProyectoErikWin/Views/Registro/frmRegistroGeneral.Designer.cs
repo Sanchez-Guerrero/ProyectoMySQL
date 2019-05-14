@@ -43,12 +43,9 @@
             this.txtObservacion = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.rtxtDescripcionMarca = new System.Windows.Forms.RichTextBox();
-            this.txtNombreMarca = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.rsComputo = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
-            this.rsMarca = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.cbMarca = new System.Windows.Forms.ComboBox();
             this.pnlIzquierdo.SuspendLayout();
             this.pnlContenedor.SuspendLayout();
             this.SuspendLayout();
@@ -94,6 +91,7 @@
             // pnlContenedor
             // 
             this.pnlContenedor.BackColor = System.Drawing.Color.White;
+            this.pnlContenedor.Controls.Add(this.cbMarca);
             this.pnlContenedor.Controls.Add(this.btnRegistrar);
             this.pnlContenedor.Controls.Add(this.txtNombreComercial);
             this.pnlContenedor.Controls.Add(this.txtDisplay);
@@ -104,9 +102,6 @@
             this.pnlContenedor.Controls.Add(this.txtObservacion);
             this.pnlContenedor.Controls.Add(this.txtDescripcion);
             this.pnlContenedor.Controls.Add(this.label2);
-            this.pnlContenedor.Controls.Add(this.rtxtDescripcionMarca);
-            this.pnlContenedor.Controls.Add(this.txtNombreMarca);
-            this.pnlContenedor.Controls.Add(this.label1);
             this.pnlContenedor.Controls.Add(this.shapeContainer1);
             this.pnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlContenedor.Location = new System.Drawing.Point(159, 0);
@@ -133,7 +128,7 @@
             // 
             this.txtNombreComercial.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreComercial.ForeColor = System.Drawing.Color.Black;
-            this.txtNombreComercial.Location = new System.Drawing.Point(241, 328);
+            this.txtNombreComercial.Location = new System.Drawing.Point(241, 207);
             this.txtNombreComercial.Name = "txtNombreComercial";
             this.txtNombreComercial.Size = new System.Drawing.Size(209, 30);
             this.txtNombreComercial.TabIndex = 13;
@@ -145,7 +140,7 @@
             // 
             this.txtDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDisplay.ForeColor = System.Drawing.Color.Black;
-            this.txtDisplay.Location = new System.Drawing.Point(24, 328);
+            this.txtDisplay.Location = new System.Drawing.Point(24, 207);
             this.txtDisplay.Name = "txtDisplay";
             this.txtDisplay.Size = new System.Drawing.Size(201, 30);
             this.txtDisplay.TabIndex = 12;
@@ -157,7 +152,7 @@
             // 
             this.txtNumeroMac.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNumeroMac.ForeColor = System.Drawing.Color.Black;
-            this.txtNumeroMac.Location = new System.Drawing.Point(241, 289);
+            this.txtNumeroMac.Location = new System.Drawing.Point(241, 168);
             this.txtNumeroMac.Name = "txtNumeroMac";
             this.txtNumeroMac.Size = new System.Drawing.Size(209, 30);
             this.txtNumeroMac.TabIndex = 11;
@@ -169,7 +164,7 @@
             // 
             this.txtProcesador.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtProcesador.ForeColor = System.Drawing.Color.Black;
-            this.txtProcesador.Location = new System.Drawing.Point(24, 289);
+            this.txtProcesador.Location = new System.Drawing.Point(24, 168);
             this.txtProcesador.Name = "txtProcesador";
             this.txtProcesador.Size = new System.Drawing.Size(201, 30);
             this.txtProcesador.TabIndex = 10;
@@ -181,7 +176,7 @@
             // 
             this.txtColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtColor.ForeColor = System.Drawing.Color.Black;
-            this.txtColor.Location = new System.Drawing.Point(241, 247);
+            this.txtColor.Location = new System.Drawing.Point(241, 126);
             this.txtColor.Name = "txtColor";
             this.txtColor.Size = new System.Drawing.Size(209, 30);
             this.txtColor.TabIndex = 9;
@@ -193,7 +188,7 @@
             // 
             this.txtNumSerie.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNumSerie.ForeColor = System.Drawing.Color.Black;
-            this.txtNumSerie.Location = new System.Drawing.Point(24, 247);
+            this.txtNumSerie.Location = new System.Drawing.Point(24, 126);
             this.txtNumSerie.Name = "txtNumSerie";
             this.txtNumSerie.Size = new System.Drawing.Size(201, 30);
             this.txtNumSerie.TabIndex = 8;
@@ -205,7 +200,7 @@
             // 
             this.txtObservacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtObservacion.ForeColor = System.Drawing.Color.Black;
-            this.txtObservacion.Location = new System.Drawing.Point(241, 205);
+            this.txtObservacion.Location = new System.Drawing.Point(241, 84);
             this.txtObservacion.Name = "txtObservacion";
             this.txtObservacion.Size = new System.Drawing.Size(209, 30);
             this.txtObservacion.TabIndex = 7;
@@ -217,7 +212,7 @@
             // 
             this.txtDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescripcion.ForeColor = System.Drawing.Color.Black;
-            this.txtDescripcion.Location = new System.Drawing.Point(23, 205);
+            this.txtDescripcion.Location = new System.Drawing.Point(23, 84);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(201, 30);
             this.txtDescripcion.TabIndex = 6;
@@ -231,47 +226,11 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(60)))), ((int)(((byte)(74)))));
-            this.label2.Location = new System.Drawing.Point(20, 167);
+            this.label2.Location = new System.Drawing.Point(20, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(99, 23);
             this.label2.TabIndex = 4;
             this.label2.Text = "Computo";
-            // 
-            // rtxtDescripcionMarca
-            // 
-            this.rtxtDescripcionMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtxtDescripcionMarca.ForeColor = System.Drawing.Color.Black;
-            this.rtxtDescripcionMarca.Location = new System.Drawing.Point(24, 79);
-            this.rtxtDescripcionMarca.Name = "rtxtDescripcionMarca";
-            this.rtxtDescripcionMarca.Size = new System.Drawing.Size(426, 62);
-            this.rtxtDescripcionMarca.TabIndex = 3;
-            this.rtxtDescripcionMarca.Text = "Descripción";
-            this.rtxtDescripcionMarca.Enter += new System.EventHandler(this.rtxtDescripcionMarca_Enter);
-            this.rtxtDescripcionMarca.Leave += new System.EventHandler(this.rtxtDescripcionMarca_Leave);
-            // 
-            // txtNombreMarca
-            // 
-            this.txtNombreMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombreMarca.ForeColor = System.Drawing.Color.Black;
-            this.txtNombreMarca.Location = new System.Drawing.Point(24, 40);
-            this.txtNombreMarca.Name = "txtNombreMarca";
-            this.txtNombreMarca.Size = new System.Drawing.Size(426, 30);
-            this.txtNombreMarca.TabIndex = 2;
-            this.txtNombreMarca.Text = "Nombre";
-            this.txtNombreMarca.Enter += new System.EventHandler(this.txtNombreMarca_Enter);
-            this.txtNombreMarca.Leave += new System.EventHandler(this.txtNombreMarca_Leave);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(60)))), ((int)(((byte)(74)))));
-            this.label1.Location = new System.Drawing.Point(19, 5);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 23);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Marca";
             // 
             // shapeContainer1
             // 
@@ -279,8 +238,7 @@
             this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
             this.shapeContainer1.Name = "shapeContainer1";
             this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.rsComputo,
-            this.rsMarca});
+            this.rsComputo});
             this.shapeContainer1.Size = new System.Drawing.Size(468, 406);
             this.shapeContainer1.TabIndex = 0;
             this.shapeContainer1.TabStop = false;
@@ -291,18 +249,17 @@
             this.rsComputo.BorderColor = System.Drawing.Color.Silver;
             this.rsComputo.Enabled = false;
             this.rsComputo.FillGradientColor = System.Drawing.Color.DimGray;
-            this.rsComputo.Location = new System.Drawing.Point(10, 180);
+            this.rsComputo.Location = new System.Drawing.Point(10, 22);
             this.rsComputo.Name = "rsComputo";
-            this.rsComputo.Size = new System.Drawing.Size(451, 214);
+            this.rsComputo.Size = new System.Drawing.Size(451, 372);
             // 
-            // rsMarca
+            // cbMarca
             // 
-            this.rsMarca.BorderColor = System.Drawing.Color.Silver;
-            this.rsMarca.Enabled = false;
-            this.rsMarca.FillGradientColor = System.Drawing.Color.DimGray;
-            this.rsMarca.Location = new System.Drawing.Point(9, 18);
-            this.rsMarca.Name = "rsMarca";
-            this.rsMarca.Size = new System.Drawing.Size(451, 137);
+            this.cbMarca.FormattingEnabled = true;
+            this.cbMarca.Location = new System.Drawing.Point(24, 49);
+            this.cbMarca.Name = "cbMarca";
+            this.cbMarca.Size = new System.Drawing.Size(200, 21);
+            this.cbMarca.TabIndex = 15;
             // 
             // frmRegistroGeneral
             // 
@@ -327,15 +284,11 @@
 
         private System.Windows.Forms.Panel pnlIzquierdo;
         private System.Windows.Forms.Panel pnlContenedor;
-        private System.Windows.Forms.Label label1;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
-        private Microsoft.VisualBasic.PowerPacks.RectangleShape rsMarca;
         private System.Windows.Forms.Label label2;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rsComputo;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Label lblEmail;
-        public System.Windows.Forms.RichTextBox rtxtDescripcionMarca;
-        public System.Windows.Forms.TextBox txtNombreMarca;
         public System.Windows.Forms.Button btnRegistrar;
         public System.Windows.Forms.TextBox txtNombreComercial;
         public System.Windows.Forms.TextBox txtDisplay;
@@ -345,5 +298,6 @@
         public System.Windows.Forms.TextBox txtNumSerie;
         public System.Windows.Forms.TextBox txtObservacion;
         public System.Windows.Forms.TextBox txtDescripcion;
+        private System.Windows.Forms.ComboBox cbMarca;
     }
 }

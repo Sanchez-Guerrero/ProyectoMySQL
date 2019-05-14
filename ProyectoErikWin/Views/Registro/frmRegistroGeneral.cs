@@ -1,4 +1,5 @@
-﻿using ProyectoErik.Entidades.Entidades;
+﻿using MySql.Data.MySqlClient;
+using ProyectoErik.Entidades.Entidades;
 using ProyectoErik.Logica.Logicas;
 using ProyectoErikWin.Controller.Login;
 using ProyectoErikWin.Controller.RegistroGeneral;
@@ -22,6 +23,7 @@ namespace ProyectoErikWin.Views
         {
             InitializeComponent();
             lblEmail.Text = ctrlLogin.ema;
+            CargarCombo();
         }
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
@@ -31,8 +33,7 @@ namespace ProyectoErikWin.Views
             compu.observaciones = txtObservacion.Text;
             compu.numeroSerie = txtNumSerie.Text;
             compu.color = txtColor.Text;
-            compu.nombre = txtNombreMarca.Text;
-            compu.descripcionMarca = rtxtDescripcionMarca.Text;
+            compu.idMarca = cbMarca.SelectedIndex;
             compu.procesador = txtProcesador.Text;
             compu.numeroMac = txtNumeroMac.Text;
             compu.display = txtDisplay.Text;
@@ -50,39 +51,6 @@ namespace ProyectoErikWin.Views
             }
         }
         //Las acciones Enter y Leave nos sirven para realizar el placeholder como html.
-
-        private void txtNombreMarca_Enter(object sender, EventArgs e)
-        {
-            if(txtNombreMarca.Text == "Nombre")
-            {
-                txtNombreMarca.Text = "";
-                txtNombreMarca.ForeColor = Color.Black;
-            }
-        }
-        private void txtNombreMarca_Leave(object sender, EventArgs e)
-        {
-            if (txtNombreMarca.Text == "")
-            {
-                txtNombreMarca.Text = "Nombre";
-                txtNombreMarca.ForeColor = Color.Black;
-            }
-        }
-        private void rtxtDescripcionMarca_Enter(object sender, EventArgs e)
-        {
-            if (rtxtDescripcionMarca.Text == "Descripción")
-            {
-                rtxtDescripcionMarca.Text = "";
-                rtxtDescripcionMarca.ForeColor = Color.Black;
-            }
-        }
-        private void rtxtDescripcionMarca_Leave(object sender, EventArgs e)
-        {
-            if (rtxtDescripcionMarca.Text == "")
-            {
-                rtxtDescripcionMarca.Text = "Descripción";
-                rtxtDescripcionMarca.ForeColor = Color.Black;
-            }
-        }
         private void txtDescripcion_Enter(object sender, EventArgs e)
         {
             if (txtDescripcion.Text == "Descripción")
@@ -215,8 +183,23 @@ namespace ProyectoErikWin.Views
         void LimpiarCampos()
         {
             txtDescripcion.Text = txtObservacion.Text = txtNumSerie.Text = txtColor.Text
-                = txtNombreMarca.Text = rtxtDescripcionMarca.Text = txtProcesador.Text
+                = txtProcesador.Text
                 = txtNumeroMac.Text = txtDisplay.Text = txtNombreComercial.Text = "";
         }
+
+        void CargarCombo()
+        {
+            string ConnectionString = @"Server=localhost;Database=servicedbdistribuidos;Uid=root;pwd=moises;";//Cadena de conexion a MySQL.
+            string Query = "select id, nombre from marca;";
+            MySqlConnection MyConn2 = new MySqlConnection(ConnectionString);
+            MySqlCommand MyCommand2 = new MySqlCommand(Query, MyConn2);
+            MySqlDataAdapter MyAdapter = new MySqlDataAdapter(MyCommand2);
+            DataTable dt = new DataTable();
+            MyAdapter.Fill(dt);
+            cbMarca.DisplayMember = "nombre";
+            cbMarca.ValueMember = "id";
+            cbMarca.DataSource = dt;
+        }
+
     }
 }

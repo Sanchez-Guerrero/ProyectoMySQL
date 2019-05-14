@@ -2,3 +2,4 @@ C:\Users\moise\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoErik\Proy
 C:\Users\moise\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoErik\ProyectoErik.Entidades\bin\Debug\ProyectoErik.Entidades.pdb
 C:\Users\moise\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoErik\ProyectoErik.Entidades\obj\Debug\ProyectoErik.Entidades.dll
 C:\Users\moise\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoErik\ProyectoErik.Entidades\obj\Debug\ProyectoErik.Entidades.pdb
+C:\Users\moise\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoErik\ProyectoErik.Entidades\obj\Debug\ProyectoErik.Entidades.csprojResolveAssemblyReference.cache

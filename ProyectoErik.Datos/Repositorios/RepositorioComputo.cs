@@ -16,24 +16,13 @@ namespace ProyectoErik.Datos.Repositorios
         public void InsertarComputoyMarca(Computo computo)
         {
             try
-            {
-                using (MySqlConnection mysqlConnection = new MySqlConnection(ConnectionString))
-                {
-                    mysqlConnection.Open();
-                    MySqlCommand mySqlCmd = new MySqlCommand("st_RegistrarComputo", mysqlConnection);
-                    mySqlCmd.CommandType = CommandType.StoredProcedure;
-                    mySqlCmd.Parameters.AddWithValue("_descripcion", computo.descripcion);
-                    mySqlCmd.Parameters.AddWithValue("_observaciones", computo.observaciones);
-                    mySqlCmd.Parameters.AddWithValue("_numeroSerie", computo.numeroSerie);
-                    mySqlCmd.Parameters.AddWithValue("_color", computo.color);
-                    mySqlCmd.Parameters.AddWithValue("_procesador", computo.procesador);
-                    mySqlCmd.Parameters.AddWithValue("_numeroMac", computo.numeroMac);
-                    mySqlCmd.Parameters.AddWithValue("_display", computo.display);
-                    mySqlCmd.Parameters.AddWithValue("_nombreComercial", computo.nombreComercial);
-                    mySqlCmd.Parameters.AddWithValue("_nombre", computo.nombre);
-                    mySqlCmd.Parameters.AddWithValue("_descripcionMarca", computo.descripcionMarca);
-                    mySqlCmd.ExecuteNonQuery();
-                };
+            { 
+                string Query = "insert into computo(descripcion,observaciones,numeroSerie,color,idMarca,procesador,numeroMac,display,nombreComercial) values('" + computo.descripcion + "','" + computo.observaciones + "','" + computo.numeroSerie + "','" + computo.color + "','" + computo.idMarca + "','" + computo.procesador + "','" + computo.numeroMac + "','" + computo.display + "','" + computo.nombreComercial + "');";  
+                MySqlConnection MyConn2 = new MySqlConnection(ConnectionString); 
+                MySqlCommand MyCommand2 = new MySqlCommand(Query, MyConn2);
+                MySqlDataReader MyReader2;
+                MyConn2.Open();
+                MyReader2 = MyCommand2.ExecuteReader();
             }
             catch(MySqlException ex)
             {

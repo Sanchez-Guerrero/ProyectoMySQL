@@ -1,8 +1,10 @@
-﻿using ProyectoErik.Entidades.Entidades;
+﻿using MySql.Data.MySqlClient;
+using ProyectoErik.Entidades.Entidades;
 using ProyectoErik.Logica.Logicas;
 using ProyectoErikWin.Views;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;

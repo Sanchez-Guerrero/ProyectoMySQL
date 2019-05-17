@@ -1,4 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
+using ProyectoErik.Datos.Repositorios;
 using ProyectoErik.Entidades.Entidades;
 using ProyectoErik.Logica.Logicas;
 using ProyectoErikWin.Controller.Login;
@@ -187,6 +188,7 @@ namespace ProyectoErikWin.Views
                 = txtNumeroMac.Text = txtDisplay.Text = txtNombreComercial.Text = "";
         }
 
+        //Metodos para poder cargar el comboBox con la información
         void CargarCombo()
         {
             string ConnectionString = @"Server=localhost;Database=servicedbdistribuidos;Uid=root;pwd=moises;";//Cadena de conexion a MySQL.
@@ -200,6 +202,5 @@ namespace ProyectoErikWin.Views
             cbMarca.ValueMember = "id";
             cbMarca.DataSource = dt;
         }
-
     }
 }

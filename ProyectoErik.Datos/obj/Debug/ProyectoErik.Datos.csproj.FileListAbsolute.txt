@@ -8,3 +8,13 @@ C:\Users\moise\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoErik\Proy
 C:\Users\moise\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoErik\ProyectoErik.Datos\obj\Debug\ProyectoErik.Datos.csprojResolveAssemblyReference.cache
 C:\Users\moise\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoErik\ProyectoErik.Datos\obj\Debug\ProyectoErik.Datos.dll
 C:\Users\moise\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoErik\ProyectoErik.Datos\obj\Debug\ProyectoErik.Datos.pdb
+C:\ProyectoErik\ProyectoErik.Datos\bin\Debug\ProyectoErik.Datos.dll
+C:\ProyectoErik\ProyectoErik.Datos\bin\Debug\ProyectoErik.Datos.pdb
+C:\ProyectoErik\ProyectoErik.Datos\bin\Debug\MySql.Data.dll
+C:\ProyectoErik\ProyectoErik.Datos\bin\Debug\ProyectoErik.Entidades.dll
+C:\ProyectoErik\ProyectoErik.Datos\bin\Debug\Google.Protobuf.dll
+C:\ProyectoErik\ProyectoErik.Datos\bin\Debug\ProyectoErik.Entidades.pdb
+C:\ProyectoErik\ProyectoErik.Datos\bin\Debug\MySql.Data.xml
+C:\ProyectoErik\ProyectoErik.Datos\obj\Debug\ProyectoErik.Datos.csprojResolveAssemblyReference.cache
+C:\ProyectoErik\ProyectoErik.Datos\obj\Debug\ProyectoErik.Datos.dll
+C:\ProyectoErik\ProyectoErik.Datos\obj\Debug\ProyectoErik.Datos.pdb

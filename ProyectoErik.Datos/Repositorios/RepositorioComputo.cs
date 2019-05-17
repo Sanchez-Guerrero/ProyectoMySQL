@@ -12,7 +12,7 @@ namespace ProyectoErik.Datos.Repositorios
     public class RepositorioComputo
     {
         string ConnectionString = @"Server=localhost;Database=servicedbdistribuidos;Uid=root;pwd=moises;";//Cadena de conexion a MySQL.
-        //Creación de stored procedure para poder realizar la inserción. 
+        //Creación del query para poder realizar la inserción. 
         public void InsertarComputoyMarca(Computo computo)
         {
             try
@@ -29,5 +29,6 @@ namespace ProyectoErik.Datos.Repositorios
                 ex.ToString();
             }
         }
+        
     }
 }

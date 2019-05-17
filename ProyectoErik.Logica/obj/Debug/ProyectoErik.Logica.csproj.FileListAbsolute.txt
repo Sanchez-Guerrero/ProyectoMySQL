@@ -10,3 +10,15 @@ C:\Users\moise\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoErik\Proy
 C:\Users\moise\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoErik\ProyectoErik.Logica\obj\Debug\ProyectoErik.Logica.csprojResolveAssemblyReference.cache
 C:\Users\moise\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoErik\ProyectoErik.Logica\obj\Debug\ProyectoErik.Logica.dll
 C:\Users\moise\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoErik\ProyectoErik.Logica\obj\Debug\ProyectoErik.Logica.pdb
+C:\ProyectoErik\ProyectoErik.Logica\bin\Debug\ProyectoErik.Logica.dll
+C:\ProyectoErik\ProyectoErik.Logica\bin\Debug\ProyectoErik.Logica.pdb
+C:\ProyectoErik\ProyectoErik.Logica\bin\Debug\ProyectoErik.Datos.dll
+C:\ProyectoErik\ProyectoErik.Logica\bin\Debug\ProyectoErik.Entidades.dll
+C:\ProyectoErik\ProyectoErik.Logica\bin\Debug\MySql.Data.dll
+C:\ProyectoErik\ProyectoErik.Logica\bin\Debug\Google.Protobuf.dll
+C:\ProyectoErik\ProyectoErik.Logica\bin\Debug\ProyectoErik.Datos.pdb
+C:\ProyectoErik\ProyectoErik.Logica\bin\Debug\ProyectoErik.Entidades.pdb
+C:\ProyectoErik\ProyectoErik.Logica\bin\Debug\MySql.Data.xml
+C:\ProyectoErik\ProyectoErik.Logica\obj\Debug\ProyectoErik.Logica.csprojResolveAssemblyReference.cache
+C:\ProyectoErik\ProyectoErik.Logica\obj\Debug\ProyectoErik.Logica.dll
+C:\ProyectoErik\ProyectoErik.Logica\obj\Debug\ProyectoErik.Logica.pdb
